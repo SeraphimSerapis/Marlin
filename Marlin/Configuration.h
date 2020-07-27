@@ -544,9 +544,9 @@
   //#define DEFAULT_bedKd 1675.16
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
-  #define DEFAULT_bedKp 110.47
-  #define DEFAULT_bedKi 21.20
-  #define DEFAULT_bedKd 383.73
+  #define DEFAULT_bedKp 97.41
+  #define DEFAULT_bedKi 18.69
+  #define DEFAULT_bedKd 338.35
 
 #endif // PIDTEMPBED
 
@@ -979,11 +979,11 @@
  *
  * Specify a Probe position as { X, Y, Z }
  */
-#define NOZZLE_TO_PROBE_OFFSET { -44.5, -10, -2.72 }
+#define NOZZLE_TO_PROBE_OFFSET { -44.5, -10, -2.5 }
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
-#define PROBING_MARGIN 17
+#define PROBING_MARGIN 10
 
 // X and Y axis travel speed (mm/m) between probes
 #define XY_PROBE_SPEED 10000
@@ -1003,7 +1003,7 @@
  * A total of 2 does fast/slow probes with a weighted average.
  * A total of 3 or more adds more slow probes, taking the average.
  */
-//#define MULTIPLE_PROBING 2
+#define MULTIPLE_PROBING 2
 //#define EXTRA_PROBING    1
 
 /**
